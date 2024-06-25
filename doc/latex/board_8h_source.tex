@@ -1,0 +1,84 @@
+\hypertarget{board_8h_source}{}\doxysection{board.\+h}
+\label{board_8h_source}\index{board/board.h@{board/board.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 }
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#ifndef BOARD\_H}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#define BOARD\_H}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <cstdio>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include "{}../color/color.h"{}}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../pos/coord.h"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define MAX\_BOARD\_WIDTH 120 }\textcolor{comment}{// By default}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define MAX\_BOARD\_HEIGHT 160 }\textcolor{comment}{// By default}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 }
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define VACCUM '\(\backslash\)0'}}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{26 \textcolor{preprocessor}{\#define BORDURE '\#'}}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{29 \textcolor{preprocessor}{\#define HEAD '@'}}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{33 \textcolor{keyword}{class }\mbox{\hyperlink{class_board}{Board}}}
+\DoxyCodeLine{34 \{}
+\DoxyCodeLine{35 \textcolor{keyword}{public}:}
+\DoxyCodeLine{36 \textcolor{comment}{/***}}
+\DoxyCodeLine{37 \textcolor{comment}{ * CONSTRUCTEURS}}
+\DoxyCodeLine{38 \textcolor{comment}{*/}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{44     \mbox{\hyperlink{class_board_a949e250536d36479d166fa6945211f8d}{Board}}(\textcolor{keywordtype}{int} w, \textcolor{keywordtype}{int} h, \mbox{\hyperlink{struct_coord}{Coord}} *pos);}
+\DoxyCodeLine{45 }
+\DoxyCodeLine{49     \mbox{\hyperlink{class_board_a949e250536d36479d166fa6945211f8d}{Board}}(\textcolor{keywordtype}{int} w = MAX\_BOARD\_WIDTH, \textcolor{keywordtype}{int} h = MAX\_BOARD\_HEIGHT);}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51 \textcolor{comment}{/***}}
+\DoxyCodeLine{52 \textcolor{comment}{ * METHODES PUBLIQUES}}
+\DoxyCodeLine{53 \textcolor{comment}{*/}}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_aeeb8ab18454990c3ec4c2596b262f747}{Show}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{59     \mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_board_ab15effcf8d24c9184ab7e3301c3e196d}{getPosBoard}}()\{\textcolor{keywordflow}{return} this-\/>posBoard;\}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{63     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_board_ab7a42803a45a7fcae9459170547221b1}{getWidthBoard}}()\{\textcolor{keywordflow}{return} this-\/>m\_width;\}}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{67     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_board_a39c9d45b25f9e1268b68fa7f76d44a14}{getHeightBoard}}()\{\textcolor{keywordflow}{return} this-\/>m\_height;\}}
+\DoxyCodeLine{68 }
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_a63abb81f07c5d868b77d47c248dfb8e9}{setPosBoard}}(\mbox{\hyperlink{struct_coord}{Coord}} *coord1)\{CopyCoord(coord1, \&this-\/>posBoard);\}}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{76     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_a03bdf273fd623dde48f0c98d94ca240f}{setPixelColor}}(\mbox{\hyperlink{struct_coord}{Coord}} *coord1, \mbox{\hyperlink{structcolor}{color}} *clr1);}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{81     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_board_a64dea19c802a477881a9274ddaca0cda}{setElement}}(\mbox{\hyperlink{struct_coord}{Coord}} *coord1, \textcolor{keywordtype}{char} elmnt);}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83 \textcolor{keyword}{private}:}
+\DoxyCodeLine{85     \textcolor{keywordtype}{int} m\_width;\textcolor{comment}{// La largeur de la fenetre}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{88     \textcolor{keywordtype}{int} m\_height; \textcolor{comment}{// La hauteur de la fenetre}}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{91     \mbox{\hyperlink{struct_coord}{Coord}} posBoard; \textcolor{comment}{// La position de la fenetre par rapport a l'ecran}}
+\DoxyCodeLine{92 }
+\DoxyCodeLine{94     std::vector< std::vector<color> > pixelBoard;}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{97     std::vector< std::vector<char> > element;}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{103     \mbox{\hyperlink{struct_coord}{Coord}} centerBoard(\textcolor{keywordtype}{int} wScreen, \textcolor{keywordtype}{int} hScreen);}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{106     \textcolor{keywordtype}{void} defineBoard(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{109     \textcolor{keywordtype}{void} initMap(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{112     \textcolor{keywordtype}{void} initElements(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 \};}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{117 \textcolor{keyword}{typedef} \mbox{\hyperlink{class_board}{Board}} \mbox{\hyperlink{class_board}{Cell}};}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// BOARD\_H}}
+
+\end{DoxyCode}

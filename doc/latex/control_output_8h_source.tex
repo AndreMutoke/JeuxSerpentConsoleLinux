@@ -1,0 +1,68 @@
+\hypertarget{control_output_8h_source}{}\doxysection{control\+Output.\+h}
+\label{control_output_8h_source}\index{board/controlOutput.h@{board/controlOutput.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef FILE\_CONTROL\_OUTPUT\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define FILE\_CONTROL\_OUTPUT\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{5 }
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <cstdio>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define TC\_NRM "{}\(\backslash\)x1B[0m"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#define TC\_RED "{}\(\backslash\)x1B[1;31m"{}}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#define TC\_GRN "{}\(\backslash\)x1B[1;32m"{}}}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define TC\_YEL "{}\(\backslash\)x1B[1;33m"{}}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define TC\_BLU "{}\(\backslash\)x1B[1;34m"{}}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{25 \textcolor{preprocessor}{\#define TC\_MAG "{}\(\backslash\)x1B[1;34m"{}}}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{28 \textcolor{preprocessor}{\#define TC\_CYN "{}\(\backslash\)x1B[1;36m"{}}}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{31 \textcolor{preprocessor}{\#define TC\_WTH "{}\(\backslash\)x1B[1;37m"{}}}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{34 \textcolor{preprocessor}{\#define TC\_B\_NRM "{}\(\backslash\)x1B[0m"{}}}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{37 \textcolor{preprocessor}{\#define TC\_B\_RED "{}\(\backslash\)x1B[0;31m"{}}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#define TC\_B\_GRN "{}\(\backslash\)x1B[0;32m"{}}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{43 \textcolor{preprocessor}{\#define TC\_B\_YEL "{}\(\backslash\)x1B[0;33m"{}}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{46 \textcolor{preprocessor}{\#define TC\_B\_BLU "{}\(\backslash\)x1B[0;34m"{}}}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{49 \textcolor{preprocessor}{\#define TC\_B\_MAG "{}\(\backslash\)x1B[0;34m"{}}}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{52 \textcolor{preprocessor}{\#define TC\_B\_CYN "{}\(\backslash\)x1B[0;36m"{}}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{55 \textcolor{preprocessor}{\#define TC\_B\_WTH "{}\(\backslash\)x1B[0;37m"{}}}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 }
+\DoxyCodeLine{59 \textcolor{preprocessor}{\#define TC\_BG\_NRM "{}\(\backslash\)x1B[40m"{}}}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{62 \textcolor{preprocessor}{\#define TC\_BG\_RED "{}\(\backslash\)x1B[41m"{}}}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{65 \textcolor{preprocessor}{\#define TC\_BG\_GRN "{}\(\backslash\)x1B[42m"{}}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#define TC\_BG\_YEL "{}\(\backslash\)x1B[43m"{}}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{71 \textcolor{preprocessor}{\#define TC\_BG\_BLU "{}\(\backslash\)x1B[44m"{}}}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{74 \textcolor{preprocessor}{\#define TC\_BG\_MAG "{}\(\backslash\)x1B[45m"{}}}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#define TC\_BG\_CYN "{}\(\backslash\)x1B[46m"{}}}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{80 \textcolor{preprocessor}{\#define TC\_BG\_WTH "{}\(\backslash\)x1B[47m"{}}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{83 \textcolor{preprocessor}{\#define tc\_clear\_screen() std::cout<<"{}\(\backslash\)x1B[2J"{}}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{86 \textcolor{preprocessor}{\#define tc\_move\_cursor(X,Y) std::cout<<"{}\(\backslash\)033["{}}<<Y<<"{};"{}<<X<<"{}H"{}}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// FILE\_CONTROL\_OUTPUT\_H}}
+
+\end{DoxyCode}

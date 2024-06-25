@@ -1,0 +1,36 @@
+// pour compiler il faut : g++ -o output main.cpp fichier1.cpp fichier2.cpp
+
+#include <iostream>
+
+// #include "color/color.h"
+#include "pos/coord.h"
+
+using namespace std;
+
+void printPos(Coord *coord1){cout<<"Xpos : "<< coord1->x <<"\tYpos : "<<coord1->y << endl;}
+
+int main()
+{ 
+    Coord coord1; initCoord(&coord1); 
+    Coord coord2; initCoord(&coord2); CreateCoord(89, 10, &coord2);
+
+    cout<<"Avant permutation :\n=============\nPosition 1 : ";
+    printPos(&coord1);   cout<<"=============\nPosition 2 : ";
+    printPos(&coord2);
+
+    permutCoord(&coord1, &coord2);
+    /***
+     * Ici on voit apres permutation
+    */
+    cout<<"\n\nApres permutation :\n=============\nPosition 1 : ";
+    printPos(&coord1);   cout<<"=============\nPosition 2 : ";
+    printPos(&coord2);
+
+
+
+
+    // col1.r = 10; col1.v = 20, col1.b = 30;
+
+ 
+    return 0;
+}

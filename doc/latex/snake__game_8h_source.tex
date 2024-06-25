@@ -1,0 +1,95 @@
+\hypertarget{snake__game_8h_source}{}\doxysection{snake\+\_\+game.\+h}
+\label{snake__game_8h_source}\index{Game\_Snake/snake\_game.h@{Game\_Snake/snake\_game.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SNAKE\_GAME\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SNAKE\_GAME\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <cstdio>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <termio.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include <fcntl.h>}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{13 }
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}../board/board.h"{}}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_snake}{Snake}}}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{25     \mbox{\hyperlink{class_snake_af66b5962e14640d207b5ad88495c3d6f}{Snake}}(\textcolor{keywordtype}{int} x = 0, \textcolor{keywordtype}{int} y = 0, \mbox{\hyperlink{class_board}{Board}} *frame = NULL);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_adb331f66eed7eeee132d6b6b4c925f89}{setSnakeCoord}}(\mbox{\hyperlink{struct_coord}{Coord}} *coord1)\{}
+\DoxyCodeLine{30         \textcolor{keywordtype}{int} x = coord1-\/>x;}
+\DoxyCodeLine{31         \textcolor{keywordtype}{int} y = coord1-\/>y;}
+\DoxyCodeLine{32 }
+\DoxyCodeLine{33         CreateCoord(x, y, \&this-\/>posSnake);}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \}}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{39     \mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_ad2d7dc88ee3fae6b1925ed45892dba17}{getHeadSnakePos}}()\{\textcolor{keywordflow}{return} this-\/>the\_snake[0].getPosBoard();\}}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{43     \textcolor{keywordtype}{int} \mbox{\hyperlink{class_snake_a579b997179cc417df13f7265a0a87155}{getLengthOfSnake}}()\{\textcolor{keywordflow}{return} this-\/>the\_snake.size();\}}
+\DoxyCodeLine{44 }
+\DoxyCodeLine{48     \mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_aa0196a6c4a9fe4cd3d1d2ff6802ada09}{getPartSnakePos}}(\textcolor{keywordtype}{int} pos)\{\textcolor{keywordflow}{return} this-\/>the\_snake[pos].getPosBoard();\}}
+\DoxyCodeLine{49     }
+\DoxyCodeLine{52     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_a6735a46a6c7fd35fdaf3e3dc50023c5f}{changePosofSnake}}(\mbox{\hyperlink{struct_coord}{Coord}} *newCoordHead);}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_ad440e7fc27eb57d1045237a4f1c0e816}{putSnakeToBoard}}();}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{58     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_a54e0966a475221f198762b29da30956c}{clearSnakeToBoard}}();}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_ad7d5f124e59ef98b92eb530eb6fe27c4}{makeSnakeHead}}();}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{64     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_aab5373760d4e32925ee67226e95abd74}{moving}}();}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{68     \mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_a665e0d496273f2c14a986d3fbaa20b71}{nextMoving}}();}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{71     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_ae567c678404afc5c8a447b5551d17990}{moveUp}}();}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{75     \mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_a6a0426ba8b8c42bb6340278112d1e746}{nextMoveUp}}();}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{78     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_a7efcd490596f89c68aa709f523550ae5}{moveRight}}();}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{82     \mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_a7bdec5c629ec6c0c971f6f2d93f4e156}{nextMoveRight}}();}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_aca451f915dd28e5e0aeba132ca8b9409}{moveDown}}();}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{89     \mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_a450384b5a91326033b41b7de42d9d609}{nextMoveDown}}();}
+\DoxyCodeLine{90 }
+\DoxyCodeLine{92     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_aa069c99ab07a979fa84b4970b75e39bf}{moveLeft}}();}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{96     \mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_a69f8bb61172490e5ad49c72b4d33f3bc}{nextMoveLeft}}();}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{99     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_aa99ce0dd6d1d6ea03caad63c34390389}{grandi}}();}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{103     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_ac8d71bedf0a3735feb32a3e80558fa65}{changeDirection}}(\textcolor{keywordtype}{char} d)\{this-\/>m\_direction = d;\}}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{106     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_ac3c8b0008241bd6de7c1671e9266c482}{changeVelocity}}()\{this-\/>m\_velocity += 1;\}}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{110     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_snake_a3771eb3ad0818ce262c550ec95b39587}{checkPositionInterdit}}(\textcolor{keywordtype}{int} *game);}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112     }
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 \textcolor{keyword}{private}:}
+\DoxyCodeLine{116     \mbox{\hyperlink{struct_coord}{Coord}} posSnake;}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{119     std::vector< Cell> the\_snake;}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{122     \mbox{\hyperlink{class_board}{Board}} *m\_frameParent;}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{125     \textcolor{keywordtype}{char} m\_direction;}
+\DoxyCodeLine{126 }
+\DoxyCodeLine{128     \textcolor{keywordtype}{int} m\_velocity;}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130 }
+\DoxyCodeLine{132     \textcolor{keywordtype}{void} createHead();}
+\DoxyCodeLine{133 \};}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//}}
+
+\end{DoxyCode}

@@ -1,0 +1,86 @@
+\hypertarget{class_food}{}\doxysection{Food Class Reference}
+\label{class_food}\index{Food@{Food}}
+
+
+La classe de la nourriture du serpent.  
+
+
+
+
+{\ttfamily \#include $<$food.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_food_a711a7115cd2f981298ea41fa53a6fa6b}{Food}} (int x=0, int y=0, \mbox{\hyperlink{class_board}{Board}} $\ast$frame=NULL)
+\begin{DoxyCompactList}\small\item\em Le constructeur de la classe. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_food_a85fd52ac01ce0fc42bb35e76e67c55c5}\label{class_food_a85fd52ac01ce0fc42bb35e76e67c55c5}} 
+void {\bfseries change\+Food\+Pos} (\mbox{\hyperlink{struct_coord}{Coord}} $\ast$new\+Coord)
+\begin{DoxyCompactList}\small\item\em Changer la position de la nourriture. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_food_a1ba9f7ef9a94cb1eed1a37028dc2e7e4}{alea\+Number}} (int borneY, int borneX, \mbox{\hyperlink{class_snake}{Snake}} $\ast$snake\+Eat=NULL)
+\begin{DoxyCompactList}\small\item\em Générer aléatoirement la position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_food_a2d8347b605e199f2746bc4678561d605}\label{class_food_a2d8347b605e199f2746bc4678561d605}} 
+void {\bfseries set\+Food\+To\+Board} ()
+\begin{DoxyCompactList}\small\item\em Insérer la nourriture sur le plateau. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_food_aa12f299f66cffcde669d01432b588159}\label{class_food_aa12f299f66cffcde669d01432b588159}} 
+void {\bfseries clear\+Food\+To\+Board} ()
+\begin{DoxyCompactList}\small\item\em Supprimer du plateau. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_food_a3ad1d829be35e27166eb8d21fe2b8820}\label{class_food_a3ad1d829be35e27166eb8d21fe2b8820}} 
+\mbox{\hyperlink{struct_coord}{Coord}} {\bfseries get\+Pos\+Food} ()
+\begin{DoxyCompactList}\small\item\em Récupère la position de la nourriture. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe de la nourriture du serpent. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_food_a711a7115cd2f981298ea41fa53a6fa6b}\label{class_food_a711a7115cd2f981298ea41fa53a6fa6b}} 
+\index{Food@{Food}!Food@{Food}}
+\index{Food@{Food}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{Food()}{Food()}}
+{\footnotesize\ttfamily Food\+::\+Food (\begin{DoxyParamCaption}\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0},  }\item[{\mbox{\hyperlink{class_board}{Board}} $\ast$}]{frame = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Le constructeur de la classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Les paramètres en x \\
+\hline
+{\em y} & Paramètre en y \\
+\hline
+{\em frame} & Le tableau le conténant \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_food_a1ba9f7ef9a94cb1eed1a37028dc2e7e4}\label{class_food_a1ba9f7ef9a94cb1eed1a37028dc2e7e4}} 
+\index{Food@{Food}!aleaNumber@{aleaNumber}}
+\index{aleaNumber@{aleaNumber}!Food@{Food}}
+\doxysubsubsection{\texorpdfstring{aleaNumber()}{aleaNumber()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_coord}{Coord}} Food\+::alea\+Number (\begin{DoxyParamCaption}\item[{int}]{borneY,  }\item[{int}]{borneX,  }\item[{\mbox{\hyperlink{class_snake}{Snake}} $\ast$}]{snake\+Eat = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Générer aléatoirement la position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em borneY} & Limite en Y \\
+\hline
+{\em borneX} & Limite en X \\
+\hline
+{\em snake\+Eat} & Le serpent ayant manger \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+COORD la position nouvelle 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+\_\+\+Snake/food.\+h\item 
+Game\+\_\+\+Snake/food.\+cpp\end{DoxyCompactItemize}

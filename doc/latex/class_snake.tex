@@ -1,0 +1,273 @@
+\hypertarget{class_snake}{}\doxysection{Snake Class Reference}
+\label{class_snake}\index{Snake@{Snake}}
+
+
+La classe su serpent.  
+
+
+
+
+{\ttfamily \#include $<$snake\+\_\+game.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_snake_af66b5962e14640d207b5ad88495c3d6f}{Snake}} (int x=0, int y=0, \mbox{\hyperlink{class_board}{Board}} $\ast$frame=NULL)
+\begin{DoxyCompactList}\small\item\em Le constructeur du serpent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_adb331f66eed7eeee132d6b6b4c925f89}{set\+Snake\+Coord}} (\mbox{\hyperlink{struct_coord}{Coord}} $\ast$coord1)
+\begin{DoxyCompactList}\small\item\em Insérer le serpent à une position. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_ad2d7dc88ee3fae6b1925ed45892dba17}{get\+Head\+Snake\+Pos}} ()
+\begin{DoxyCompactList}\small\item\em Chercher la t\textbackslash{}$^\wedge$ete du serpent. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_snake_a579b997179cc417df13f7265a0a87155}{get\+Length\+Of\+Snake}} ()
+\begin{DoxyCompactList}\small\item\em Récuperer la longueur du serpent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_aa0196a6c4a9fe4cd3d1d2ff6802ada09}{get\+Part\+Snake\+Pos}} (int pos)
+\begin{DoxyCompactList}\small\item\em La position d\textquotesingle{}une partie du serpent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_a6735a46a6c7fd35fdaf3e3dc50023c5f}{change\+Posof\+Snake}} (\mbox{\hyperlink{struct_coord}{Coord}} $\ast$new\+Coord\+Head)
+\begin{DoxyCompactList}\small\item\em Changer la position d\textquotesingle{}élément du serpent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_ad440e7fc27eb57d1045237a4f1c0e816}\label{class_snake_ad440e7fc27eb57d1045237a4f1c0e816}} 
+void {\bfseries put\+Snake\+To\+Board} ()
+\begin{DoxyCompactList}\small\item\em Insérer le serpent dans le tableau. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_a54e0966a475221f198762b29da30956c}\label{class_snake_a54e0966a475221f198762b29da30956c}} 
+void {\bfseries clear\+Snake\+To\+Board} ()
+\begin{DoxyCompactList}\small\item\em Supprimmer Le serpent du tableau. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_ad7d5f124e59ef98b92eb530eb6fe27c4}\label{class_snake_ad7d5f124e59ef98b92eb530eb6fe27c4}} 
+void {\bfseries make\+Snake\+Head} ()
+\begin{DoxyCompactList}\small\item\em Insérer la t\textbackslash{}$^\wedge$ete du serpent. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_aab5373760d4e32925ee67226e95abd74}\label{class_snake_aab5373760d4e32925ee67226e95abd74}} 
+void {\bfseries moving} ()
+\begin{DoxyCompactList}\small\item\em Déplacement du serpent. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_a665e0d496273f2c14a986d3fbaa20b71}{next\+Moving}} ()
+\begin{DoxyCompactList}\small\item\em vérification de la position future \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_ae567c678404afc5c8a447b5551d17990}\label{class_snake_ae567c678404afc5c8a447b5551d17990}} 
+void {\bfseries move\+Up} ()
+\begin{DoxyCompactList}\small\item\em Déplacement d\textquotesingle{}en haut. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_a6a0426ba8b8c42bb6340278112d1e746}{next\+Move\+Up}} ()
+\begin{DoxyCompactList}\small\item\em La position futur d\textquotesingle{}en haut. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_a7efcd490596f89c68aa709f523550ae5}\label{class_snake_a7efcd490596f89c68aa709f523550ae5}} 
+void {\bfseries move\+Right} ()
+\begin{DoxyCompactList}\small\item\em Déplacement à droite. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_a7bdec5c629ec6c0c971f6f2d93f4e156}{next\+Move\+Right}} ()
+\begin{DoxyCompactList}\small\item\em Position future de droite. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_aca451f915dd28e5e0aeba132ca8b9409}\label{class_snake_aca451f915dd28e5e0aeba132ca8b9409}} 
+void {\bfseries move\+Down} ()
+\begin{DoxyCompactList}\small\item\em Deplacement en bas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_a450384b5a91326033b41b7de42d9d609}{next\+Move\+Down}} ()
+\begin{DoxyCompactList}\small\item\em Déplacement future en bas. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_aa069c99ab07a979fa84b4970b75e39bf}\label{class_snake_aa069c99ab07a979fa84b4970b75e39bf}} 
+void {\bfseries move\+Left} ()
+\begin{DoxyCompactList}\small\item\em Déplacement de gauche. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_snake_a69f8bb61172490e5ad49c72b4d33f3bc}{next\+Move\+Left}} ()
+\begin{DoxyCompactList}\small\item\em Déplacement future de gauche. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_aa99ce0dd6d1d6ea03caad63c34390389}\label{class_snake_aa99ce0dd6d1d6ea03caad63c34390389}} 
+void {\bfseries grandi} ()
+\begin{DoxyCompactList}\small\item\em Grandir le serpent. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_ac8d71bedf0a3735feb32a3e80558fa65}{change\+Direction}} (char d)
+\begin{DoxyCompactList}\small\item\em Changer des direction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_snake_ac3c8b0008241bd6de7c1671e9266c482}\label{class_snake_ac3c8b0008241bd6de7c1671e9266c482}} 
+void {\bfseries change\+Velocity} ()
+\begin{DoxyCompactList}\small\item\em Changer la velocité \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_snake_a3771eb3ad0818ce262c550ec95b39587}{check\+Position\+Interdit}} (int $\ast$game)
+\begin{DoxyCompactList}\small\item\em Vérifier les position intédites. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe su serpent. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_snake_af66b5962e14640d207b5ad88495c3d6f}\label{class_snake_af66b5962e14640d207b5ad88495c3d6f}} 
+\index{Snake@{Snake}!Snake@{Snake}}
+\index{Snake@{Snake}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{Snake()}{Snake()}}
+{\footnotesize\ttfamily Snake\+::\+Snake (\begin{DoxyParamCaption}\item[{int}]{x = {\ttfamily 0},  }\item[{int}]{y = {\ttfamily 0},  }\item[{\mbox{\hyperlink{class_board}{Board}} $\ast$}]{frame = {\ttfamily NULL} }\end{DoxyParamCaption})}
+
+
+
+Le constructeur du serpent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Les coordonnées en x du serpent \\
+\hline
+{\em y} & Les coordonnées en y du serpent \\
+\hline
+{\em frame} & Le plateau \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_snake_ac8d71bedf0a3735feb32a3e80558fa65}\label{class_snake_ac8d71bedf0a3735feb32a3e80558fa65}} 
+\index{Snake@{Snake}!changeDirection@{changeDirection}}
+\index{changeDirection@{changeDirection}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{changeDirection()}{changeDirection()}}
+{\footnotesize\ttfamily void Snake\+::change\+Direction (\begin{DoxyParamCaption}\item[{char}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Changer des direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & La direction \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_snake_a6735a46a6c7fd35fdaf3e3dc50023c5f}\label{class_snake_a6735a46a6c7fd35fdaf3e3dc50023c5f}} 
+\index{Snake@{Snake}!changePosofSnake@{changePosofSnake}}
+\index{changePosofSnake@{changePosofSnake}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{changePosofSnake()}{changePosofSnake()}}
+{\footnotesize\ttfamily void Snake\+::change\+Posof\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coord}{Coord}} $\ast$}]{new\+Coord\+Head }\end{DoxyParamCaption})}
+
+
+
+Changer la position d\textquotesingle{}élément du serpent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Coord\+Head} & Les nouvelles positions \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_snake_a3771eb3ad0818ce262c550ec95b39587}\label{class_snake_a3771eb3ad0818ce262c550ec95b39587}} 
+\index{Snake@{Snake}!checkPositionInterdit@{checkPositionInterdit}}
+\index{checkPositionInterdit@{checkPositionInterdit}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{checkPositionInterdit()}{checkPositionInterdit()}}
+{\footnotesize\ttfamily void Snake\+::check\+Position\+Interdit (\begin{DoxyParamCaption}\item[{int $\ast$}]{game }\end{DoxyParamCaption})}
+
+
+
+Vérifier les position intédites. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Voir comment arreter le jeux \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_snake_ad2d7dc88ee3fae6b1925ed45892dba17}\label{class_snake_ad2d7dc88ee3fae6b1925ed45892dba17}} 
+\index{Snake@{Snake}!getHeadSnakePos@{getHeadSnakePos}}
+\index{getHeadSnakePos@{getHeadSnakePos}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{getHeadSnakePos()}{getHeadSnakePos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_coord}{Coord}} Snake\+::get\+Head\+Snake\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Chercher la t\textbackslash{}$^\wedge$ete du serpent. 
+
+\begin{DoxyReturn}{Returns}
+Les coordonnées de la position de la t\textbackslash{}$^\wedge$ete du serpent 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_snake_a579b997179cc417df13f7265a0a87155}\label{class_snake_a579b997179cc417df13f7265a0a87155}} 
+\index{Snake@{Snake}!getLengthOfSnake@{getLengthOfSnake}}
+\index{getLengthOfSnake@{getLengthOfSnake}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{getLengthOfSnake()}{getLengthOfSnake()}}
+{\footnotesize\ttfamily int Snake\+::get\+Length\+Of\+Snake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Récuperer la longueur du serpent. 
+
+\begin{DoxyReturn}{Returns}
+La longueur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_snake_aa0196a6c4a9fe4cd3d1d2ff6802ada09}\label{class_snake_aa0196a6c4a9fe4cd3d1d2ff6802ada09}} 
+\index{Snake@{Snake}!getPartSnakePos@{getPartSnakePos}}
+\index{getPartSnakePos@{getPartSnakePos}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{getPartSnakePos()}{getPartSnakePos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_coord}{Coord}} Snake\+::get\+Part\+Snake\+Pos (\begin{DoxyParamCaption}\item[{int}]{pos }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+La position d\textquotesingle{}une partie du serpent. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & L\textquotesingle{}élément \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_snake_a450384b5a91326033b41b7de42d9d609}\label{class_snake_a450384b5a91326033b41b7de42d9d609}} 
+\index{Snake@{Snake}!nextMoveDown@{nextMoveDown}}
+\index{nextMoveDown@{nextMoveDown}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{nextMoveDown()}{nextMoveDown()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_coord}{Coord}} Snake\+::next\+Move\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Déplacement future en bas. 
+
+\begin{DoxyReturn}{Returns}
+Déplacement future en bas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_snake_a69f8bb61172490e5ad49c72b4d33f3bc}\label{class_snake_a69f8bb61172490e5ad49c72b4d33f3bc}} 
+\index{Snake@{Snake}!nextMoveLeft@{nextMoveLeft}}
+\index{nextMoveLeft@{nextMoveLeft}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{nextMoveLeft()}{nextMoveLeft()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_coord}{Coord}} Snake\+::next\+Move\+Left (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Déplacement future de gauche. 
+
+\begin{DoxyReturn}{Returns}
+Position future de gauche 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_snake_a7bdec5c629ec6c0c971f6f2d93f4e156}\label{class_snake_a7bdec5c629ec6c0c971f6f2d93f4e156}} 
+\index{Snake@{Snake}!nextMoveRight@{nextMoveRight}}
+\index{nextMoveRight@{nextMoveRight}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{nextMoveRight()}{nextMoveRight()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_coord}{Coord}} Snake\+::next\+Move\+Right (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Position future de droite. 
+
+\begin{DoxyReturn}{Returns}
+Position futur de droite 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_snake_a6a0426ba8b8c42bb6340278112d1e746}\label{class_snake_a6a0426ba8b8c42bb6340278112d1e746}} 
+\index{Snake@{Snake}!nextMoveUp@{nextMoveUp}}
+\index{nextMoveUp@{nextMoveUp}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{nextMoveUp()}{nextMoveUp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_coord}{Coord}} Snake\+::next\+Move\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+La position futur d\textquotesingle{}en haut. 
+
+\begin{DoxyReturn}{Returns}
+La position futur d\textquotesingle{}en haut 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_snake_a665e0d496273f2c14a986d3fbaa20b71}\label{class_snake_a665e0d496273f2c14a986d3fbaa20b71}} 
+\index{Snake@{Snake}!nextMoving@{nextMoving}}
+\index{nextMoving@{nextMoving}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{nextMoving()}{nextMoving()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_coord}{Coord}} Snake\+::next\+Moving (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+vérification de la position future 
+
+\begin{DoxyReturn}{Returns}
+La position futur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_snake_adb331f66eed7eeee132d6b6b4c925f89}\label{class_snake_adb331f66eed7eeee132d6b6b4c925f89}} 
+\index{Snake@{Snake}!setSnakeCoord@{setSnakeCoord}}
+\index{setSnakeCoord@{setSnakeCoord}!Snake@{Snake}}
+\doxysubsubsection{\texorpdfstring{setSnakeCoord()}{setSnakeCoord()}}
+{\footnotesize\ttfamily void Snake\+::set\+Snake\+Coord (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coord}{Coord}} $\ast$}]{coord1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Insérer le serpent à une position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord1} & La nouvelle position du serpent \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Game\+\_\+\+Snake/snake\+\_\+game.\+h\item 
+Game\+\_\+\+Snake/snake\+\_\+game.\+cpp\end{DoxyCompactItemize}

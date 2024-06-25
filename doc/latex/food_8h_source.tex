@@ -1,0 +1,47 @@
+\hypertarget{food_8h_source}{}\doxysection{food.\+h}
+\label{food_8h_source}\index{Game\_Snake/food.h@{Game\_Snake/food.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef FOOD\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define FOOD\_H}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <cstdio>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <termio.h>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#include <fcntl.h>}}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include "{}../board/board.h"{}}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include "{}../board/controlOutput.h"{}}}
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include "{}snake\_game.h"{}}}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_food}{Food}}}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{20 \textcolor{keyword}{public}:}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{26     \mbox{\hyperlink{class_food_a711a7115cd2f981298ea41fa53a6fa6b}{Food}}(\textcolor{keywordtype}{int} x = 0, \textcolor{keywordtype}{int} y = 0, \mbox{\hyperlink{class_board}{Board}} *frame = NULL);}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_food_a85fd52ac01ce0fc42bb35e76e67c55c5}{changeFoodPos}}(\mbox{\hyperlink{struct_coord}{Coord}} *newCoord);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{36     \mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_food_a1ba9f7ef9a94cb1eed1a37028dc2e7e4}{aleaNumber}}(\textcolor{keywordtype}{int} borneY, \textcolor{keywordtype}{int} borneX, \mbox{\hyperlink{class_snake}{Snake}} *snakeEat=NULL);}
+\DoxyCodeLine{37 }
+\DoxyCodeLine{39     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_food_a2d8347b605e199f2746bc4678561d605}{setFoodToBoard}}();}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_food_aa12f299f66cffcde669d01432b588159}{clearFoodToBoard}}();}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{45     \mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_food_a3ad1d829be35e27166eb8d21fe2b8820}{getPosFood}}()\{\textcolor{keywordflow}{return} this-\/>posFood;\}}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47 \textcolor{keyword}{private}:}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{50     \mbox{\hyperlink{struct_coord}{Coord}} posFood;}
+\DoxyCodeLine{51 }
+\DoxyCodeLine{53     \mbox{\hyperlink{class_board}{Board}} *m\_frameParent;}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55 \};}
+\DoxyCodeLine{56 }
+\DoxyCodeLine{57 \textcolor{preprocessor}{\#endif }\textcolor{comment}{// FOOD\_H}}
+
+\end{DoxyCode}

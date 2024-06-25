@@ -1,0 +1,34 @@
+// pour compiler il faut : g++ -o output main.cpp fichier1.cpp fichier2.cpp
+
+#include <iostream>
+
+#include "color/color.h"
+#include "pos/coord.h"
+
+using namespace std;
+
+void printColor(color *clr){cout << "Color red:"<< clr->r <<"\nColor Green : "<< clr->v <<"\nColor blue : "<<clr->b << endl;}
+
+int main()
+{ 
+    color col1; initColor(&col1); createColor(10, 30, 20, &col1);
+    color color2; initColor(&color2); createColor(54, 34, 23, &color2);
+
+    // col1.r = 10; col1.v = 20, col1.b = 30;
+    
+
+    cout << "Hello world voici nos deux couleurs :\nColeur 1 :" << endl;
+    printColor(&col1); 
+    cout<< "\n===============================\n couleur 2 : " << endl;
+    printColor(&color2);
+
+    permutColor(&col1, &color2);
+
+
+    cout << "\n\nApres permutation voici nos deux couleurs :\n Coleur 1 :" << endl;
+    printColor(&col1); 
+    cout<< "\n===============================\nCouleur 2 : " << endl;
+    printColor(&color2);
+ 
+    return 0;
+}

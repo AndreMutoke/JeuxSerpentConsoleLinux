@@ -1,0 +1,173 @@
+\hypertarget{class_board}{}\doxysection{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+
+
+La classe \mbox{\hyperlink{class_board}{Board}} gere la plateforme du jeux.  
+
+
+
+
+{\ttfamily \#include $<$board.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_a949e250536d36479d166fa6945211f8d}{Board}} (int w, int h, \mbox{\hyperlink{struct_coord}{Coord}} $\ast$pos)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_board}{Board}} est le premier constructeur de la classe. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_board_ac02185ebbcf047bf9ec8025a275c5aff}{Board}} (int w=MAX\+\_\+\+BOARD\+\_\+\+WIDTH, int h=MAX\+\_\+\+BOARD\+\_\+\+HEIGHT)
+\begin{DoxyCompactList}\small\item\em Le second constructeur du plateau, ici par defaut le plateau est mis a la position (0, 0) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_board_aeeb8ab18454990c3ec4c2596b262f747}\label{class_board_aeeb8ab18454990c3ec4c2596b262f747}} 
+void {\bfseries Show} (void)
+\begin{DoxyCompactList}\small\item\em Affichage du plateau. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_coord}{Coord}} \mbox{\hyperlink{class_board_ab15effcf8d24c9184ab7e3301c3e196d}{get\+Pos\+Board}} ()
+\begin{DoxyCompactList}\small\item\em recupere la position du plateau \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_ab7a42803a45a7fcae9459170547221b1}{get\+Width\+Board}} ()
+\begin{DoxyCompactList}\small\item\em recupere la largeur du plateau \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a39c9d45b25f9e1268b68fa7f76d44a14}{get\+Height\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Recupère la hauteur du plateau. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_a63abb81f07c5d868b77d47c248dfb8e9}{set\+Pos\+Board}} (\mbox{\hyperlink{struct_coord}{Coord}} $\ast$coord1)
+\begin{DoxyCompactList}\small\item\em Placer le plateau à une position. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_a03bdf273fd623dde48f0c98d94ca240f}{set\+Pixel\+Color}} (\mbox{\hyperlink{struct_coord}{Coord}} $\ast$coord1, \mbox{\hyperlink{structcolor}{color}} $\ast$clr1)
+\begin{DoxyCompactList}\small\item\em Insérer une information de couleur du Pixel à une position du plateau. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_board_a64dea19c802a477881a9274ddaca0cda}{set\+Element}} (\mbox{\hyperlink{struct_coord}{Coord}} $\ast$coord1, char elmnt)
+\begin{DoxyCompactList}\small\item\em Insérer les caractéristique de l\textquotesingle{}élément à la position donnée. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La classe \mbox{\hyperlink{class_board}{Board}} gere la plateforme du jeux. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_board_a949e250536d36479d166fa6945211f8d}\label{class_board_a949e250536d36479d166fa6945211f8d}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}\item[{int}]{w,  }\item[{int}]{h,  }\item[{\mbox{\hyperlink{struct_coord}{Coord}} $\ast$}]{pos }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_board}{Board}} est le premier constructeur de la classe. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & la largeur du plateau \\
+\hline
+{\em h} & la hauteur du plateau \\
+\hline
+{\em pos} & la position du plateau en COORD \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_ac02185ebbcf047bf9ec8025a275c5aff}\label{class_board_ac02185ebbcf047bf9ec8025a275c5aff}} 
+\index{Board@{Board}!Board@{Board}}
+\index{Board@{Board}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{Board()}{Board()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Board\+::\+Board (\begin{DoxyParamCaption}\item[{int}]{w = {\ttfamily MAX\+\_\+BOARD\+\_\+WIDTH},  }\item[{int}]{h = {\ttfamily MAX\+\_\+BOARD\+\_\+HEIGHT} }\end{DoxyParamCaption})}
+
+
+
+Le second constructeur du plateau, ici par defaut le plateau est mis a la position (0, 0) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em w} & les parametres de la largeur du plateau \\
+\hline
+{\em h} & les parametre de la hauteur du plateau ~\newline
+ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_board_a39c9d45b25f9e1268b68fa7f76d44a14}\label{class_board_a39c9d45b25f9e1268b68fa7f76d44a14}} 
+\index{Board@{Board}!getHeightBoard@{getHeightBoard}}
+\index{getHeightBoard@{getHeightBoard}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getHeightBoard()}{getHeightBoard()}}
+{\footnotesize\ttfamily int Board\+::get\+Height\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Recupère la hauteur du plateau. 
+
+\begin{DoxyReturn}{Returns}
+INT la hauteur du plateau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_ab15effcf8d24c9184ab7e3301c3e196d}\label{class_board_ab15effcf8d24c9184ab7e3301c3e196d}} 
+\index{Board@{Board}!getPosBoard@{getPosBoard}}
+\index{getPosBoard@{getPosBoard}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getPosBoard()}{getPosBoard()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_coord}{Coord}} Board\+::get\+Pos\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+recupere la position du plateau 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_coord}{Coord}} la position du plateau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_ab7a42803a45a7fcae9459170547221b1}\label{class_board_ab7a42803a45a7fcae9459170547221b1}} 
+\index{Board@{Board}!getWidthBoard@{getWidthBoard}}
+\index{getWidthBoard@{getWidthBoard}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{getWidthBoard()}{getWidthBoard()}}
+{\footnotesize\ttfamily int Board\+::get\+Width\+Board (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+recupere la largeur du plateau 
+
+\begin{DoxyReturn}{Returns}
+INT la largeur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_board_a64dea19c802a477881a9274ddaca0cda}\label{class_board_a64dea19c802a477881a9274ddaca0cda}} 
+\index{Board@{Board}!setElement@{setElement}}
+\index{setElement@{setElement}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{setElement()}{setElement()}}
+{\footnotesize\ttfamily void Board\+::set\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coord}{Coord}} $\ast$}]{coord1,  }\item[{char}]{elmnt }\end{DoxyParamCaption})}
+
+
+
+Insérer les caractéristique de l\textquotesingle{}élément à la position donnée. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord1} & Les coordonnées de position \\
+\hline
+{\em elmnt} & La valeur de l\textquotesingle{}élément \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_a03bdf273fd623dde48f0c98d94ca240f}\label{class_board_a03bdf273fd623dde48f0c98d94ca240f}} 
+\index{Board@{Board}!setPixelColor@{setPixelColor}}
+\index{setPixelColor@{setPixelColor}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{setPixelColor()}{setPixelColor()}}
+{\footnotesize\ttfamily void Board\+::set\+Pixel\+Color (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coord}{Coord}} $\ast$}]{coord1,  }\item[{\mbox{\hyperlink{structcolor}{color}} $\ast$}]{clr1 }\end{DoxyParamCaption})}
+
+
+
+Insérer une information de couleur du Pixel à une position du plateau. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord1} & La position sur laquelle on veut insérer \\
+\hline
+{\em clr1} & La couleur à insérer \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_board_a63abb81f07c5d868b77d47c248dfb8e9}\label{class_board_a63abb81f07c5d868b77d47c248dfb8e9}} 
+\index{Board@{Board}!setPosBoard@{setPosBoard}}
+\index{setPosBoard@{setPosBoard}!Board@{Board}}
+\doxysubsubsection{\texorpdfstring{setPosBoard()}{setPosBoard()}}
+{\footnotesize\ttfamily void Board\+::set\+Pos\+Board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_coord}{Coord}} $\ast$}]{coord1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Placer le plateau à une position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord1} & La nouvelle position du plateau \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+board/board.\+h\item 
+board/board.\+cpp\end{DoxyCompactItemize}
