@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['nextmovedown_0',['nextMoveDown',['../class_snake.html#a450384b5a91326033b41b7de42d9d609',1,'Snake']]],
-  ['nextmoveleft_1',['nextMoveLeft',['../class_snake.html#a69f8bb61172490e5ad49c72b4d33f3bc',1,'Snake']]],
-  ['nextmoveright_2',['nextMoveRight',['../class_snake.html#a7bdec5c629ec6c0c971f6f2d93f4e156',1,'Snake']]],
-  ['nextmoveup_3',['nextMoveUp',['../class_snake.html#a6a0426ba8b8c42bb6340278112d1e746',1,'Snake']]],
-  ['nextmoving_4',['nextMoving',['../class_snake.html#a665e0d496273f2c14a986d3fbaa20b71',1,'Snake']]]
+  ['makesnakehead_0',['makeSnakeHead',['../class_snake.html#ad7d5f124e59ef98b92eb530eb6fe27c4',1,'Snake']]],
+  ['movedown_1',['moveDown',['../class_snake.html#aca451f915dd28e5e0aeba132ca8b9409',1,'Snake']]],
+  ['moveleft_2',['moveLeft',['../class_snake.html#aa069c99ab07a979fa84b4970b75e39bf',1,'Snake']]],
+  ['moveright_3',['moveRight',['../class_snake.html#a7efcd490596f89c68aa709f523550ae5',1,'Snake']]],
+  ['moveup_4',['moveUp',['../class_snake.html#ae567c678404afc5c8a447b5551d17990',1,'Snake']]],
+  ['moving_5',['moving',['../class_snake.html#aab5373760d4e32925ee67226e95abd74',1,'Snake']]]
 ];

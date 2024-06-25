@@ -29,22 +29,7 @@ Board::Board(int w , int h)
 
 void Board::Show()
 {
-    /***
-     * Here we will use the termio library to :
-     * Display Graphics on Linux terminal
-     *  - Low resolution
-     *  - ASCII characters (subpixels, textures)
-     *  - Colors (foreground, background)
-     *  - Move coursors position freely
-     * 
-     * Input Handling
-     *  - Canonical Mode - Line based
-     *  - Non-canonical input Mode - More control over input
-     *  - Raw input mode
-     *  - Turn off echo
-     * 
-     * Sound and Music:
-    */
+    
    this->defineBoard();
 
    
@@ -63,10 +48,7 @@ void Board::setElement(Coord *coord1, char elmnt)
     int y = coord1->y;
     this->element[x][y] = elmnt;    
 }
-/***
- * METHODES PRIVEES
- * 
-*/
+
 
 Coord Board::centerBoard(int wScreen, int hScreen)
 {
@@ -91,15 +73,13 @@ void Board::defineBoard(void)
             {
                 if(j>0 && j<this->m_width-1)
                 {
-                    // std::string r = std::to_string(this->pixelBoard[i][j].r), v = std::to_string(this->pixelBoard[i][j].v), b = std::to_string(this->pixelBoard[i][j].b);
-                    // std::string colorr1 = "\x1B[38;2;{" + r + "};{" + v + "};{" + b + "}m" ;
-                    // std::cout<<colorr1;
+                    
                     std::cout<<this->element[i][j];
                 }
                 else
                 {
-                    if(j==0) std::cout<<"#";std::cout<<this->element[i][j];
-                    if(j==this->m_width-1) std::cout<<"#";
+                    if(j==0) {std::cout<<"#"; std::cout<<this->element[i][j];}
+                    if(j==this->m_width-1) {std::cout<<"#";}
                 }
                 
             }
@@ -112,15 +92,13 @@ void Board::defineBoard(void)
     std::cout<<TC_BG_NRM;
     std::cout<<TC_NRM;
 
-    // tc_move_cursor(0,0);
-
 }
 
 void Board::initMap(void)
 {
     std::vector<color> row;
 
-    for(int i=0; i<this->m_width; ++i)
+    for(int i=0; i < (int) this->m_width; ++i)
     {
         color temp; initColor(&temp);
         row.push_back(temp);
@@ -136,13 +114,13 @@ void Board::initElements()
 {
     std::vector<char> row;
 
-    for(int i=0; i<this->m_width; ++i)
+    for(int i=0; i < (int) this->m_width; ++i)
     {
         char temp = ' '; 
         row.push_back(temp);
     } // On a fini a remplir tout les colonnes, maintenant on s'occupe de la ligne
 
-    for(int i=0; i<this->m_height; ++i)
+    for(int i=0; i < (int) this->m_height; ++i)
     {
         this->element.push_back(row);
     }

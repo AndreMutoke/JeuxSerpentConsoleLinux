@@ -38,8 +38,8 @@ Snake::Snake(int x, int y, Board *frame)
 
 void Snake::changePosofSnake(Coord *newCoordHead)
 {
-    Coord lastCoordHead = this->the_snake[0].getPosBoard();
-    for(int i=0; i<this->the_snake.size(); ++i)
+
+    for(int i=0; i < (int) this->the_snake.size(); ++i)
     {
         Coord c1 = this->the_snake[0].getPosBoard();
         Coord c2 = this->the_snake[i].getPosBoard();
@@ -54,7 +54,7 @@ void Snake::changePosofSnake(Coord *newCoordHead)
 void Snake::putSnakeToBoard()
 {
 
-    for(int i= 0; i<this->the_snake.size(); ++i)
+    for(int i= 0; i < (int)this->the_snake.size(); ++i)
     {
         Coord posOfSnake = this->the_snake[i].getPosBoard();
         this->m_frameParent->setElement(&posOfSnake, '0');
@@ -64,7 +64,7 @@ void Snake::putSnakeToBoard()
 
 void Snake::clearSnakeToBoard()
 {
-    for(int i= 0; i<this->the_snake.size(); ++i)
+    for(int i= 0; i < (int) this->the_snake.size(); ++i)
     {
         Coord posOfSnake = this->the_snake[i].getPosBoard();
         this->m_frameParent->setElement(&posOfSnake, ' ');
@@ -271,30 +271,25 @@ Coord Snake::nextMoving()
         y = this->the_snake[0].getPosBoard().y;
         
         CreateCoord(x, y, &newCoord);
-        //return newCoord;
         break;
     case 'd':
         x= this->the_snake[0].getPosBoard().x + this->m_velocity;
         y = this->the_snake[0].getPosBoard().y;
-        // Coord newCoord ; initCoord(&newCoord);
         CreateCoord(x, y, &newCoord);
-        // return newCoord;
         break;
     case 'l':
         x= this->the_snake[0].getPosBoard().x;
         y = this->the_snake[0].getPosBoard().y - this->m_velocity;
-        // Coord newCoord ; initCoord(&newCoord);
         CreateCoord(x, y, &newCoord);
-        // this->changeDirection(d);
         break;
     case 'r':
         x= this->the_snake[0].getPosBoard().x;
         y = this->the_snake[0].getPosBoard().y + this->m_velocity;
-        // Coord newCoord ; initCoord(&newCoord);
+        
         CreateCoord(x, y, &newCoord);
         break;
     case 'n':
-        // this->changeDirection(d);// moveUp();
+        
         break;
     }
     return newCoord;

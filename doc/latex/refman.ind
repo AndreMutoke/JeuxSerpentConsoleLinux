@@ -1,0 +1,96 @@
+\begin{theindex}
+
+  \item {aleaNumber}
+    \subitem {Food}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Board}, \hyperpage{7}
+    \subitem {Board}, \hyperpage{8}
+    \subitem {getHeightBoard}, \hyperpage{8}
+    \subitem {getPosBoard}, \hyperpage{8}
+    \subitem {getWidthBoard}, \hyperpage{9}
+    \subitem {setElement}, \hyperpage{9}
+    \subitem {setPixelColor}, \hyperpage{9}
+    \subitem {setPosBoard}, \hyperpage{10}
+  \item {board/board.h}, \hyperpage{19}
+  \item {board/controlOutput.h}, \hyperpage{20}
+
+  \indexspace
+
+  \item {changeDirection}
+    \subitem {Snake}, \hyperpage{15}
+  \item {changePosofSnake}
+    \subitem {Snake}, \hyperpage{15}
+  \item {checkPositionInterdit}
+    \subitem {Snake}, \hyperpage{16}
+  \item {color}, \hyperpage{10}
+  \item {color/color.h}, \hyperpage{21}
+  \item {Coord}, \hyperpage{11}
+
+  \indexspace
+
+  \item {Food}, \hyperpage{11}
+    \subitem {aleaNumber}, \hyperpage{13}
+    \subitem {Food}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Game\_Snake/food.h}, \hyperpage{21}
+  \item {Game\_Snake/snake\_game.h}, \hyperpage{22}
+  \item {getHeadSnakePos}
+    \subitem {Snake}, \hyperpage{16}
+  \item {getHeightBoard}
+    \subitem {Board}, \hyperpage{8}
+  \item {getLengthOfSnake}
+    \subitem {Snake}, \hyperpage{16}
+  \item {getPartSnakePos}
+    \subitem {Snake}, \hyperpage{16}
+  \item {getPosBoard}
+    \subitem {Board}, \hyperpage{8}
+  \item {getWidthBoard}
+    \subitem {Board}, \hyperpage{9}
+
+  \indexspace
+
+  \item {nextMoveDown}
+    \subitem {Snake}, \hyperpage{17}
+  \item {nextMoveLeft}
+    \subitem {Snake}, \hyperpage{17}
+  \item {nextMoveRight}
+    \subitem {Snake}, \hyperpage{17}
+  \item {nextMoveUp}
+    \subitem {Snake}, \hyperpage{17}
+  \item {nextMoving}
+    \subitem {Snake}, \hyperpage{18}
+
+  \indexspace
+
+  \item {pos/coord.h}, \hyperpage{23}
+
+  \indexspace
+
+  \item {setElement}
+    \subitem {Board}, \hyperpage{9}
+  \item {setPixelColor}
+    \subitem {Board}, \hyperpage{9}
+  \item {setPosBoard}
+    \subitem {Board}, \hyperpage{10}
+  \item {setSnakeCoord}
+    \subitem {Snake}, \hyperpage{18}
+  \item {Snake}, \hyperpage{13}
+    \subitem {changeDirection}, \hyperpage{15}
+    \subitem {changePosofSnake}, \hyperpage{15}
+    \subitem {checkPositionInterdit}, \hyperpage{16}
+    \subitem {getHeadSnakePos}, \hyperpage{16}
+    \subitem {getLengthOfSnake}, \hyperpage{16}
+    \subitem {getPartSnakePos}, \hyperpage{16}
+    \subitem {nextMoveDown}, \hyperpage{17}
+    \subitem {nextMoveLeft}, \hyperpage{17}
+    \subitem {nextMoveRight}, \hyperpage{17}
+    \subitem {nextMoveUp}, \hyperpage{17}
+    \subitem {nextMoving}, \hyperpage{18}
+    \subitem {setSnakeCoord}, \hyperpage{18}
+    \subitem {Snake}, \hyperpage{15}
+
+\end{theindex}
